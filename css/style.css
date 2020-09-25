@@ -1,0 +1,107 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body
+{
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+}
+
+a
+{
+    color: #555;
+}
+
+img
+{
+    margin-top: 55px;
+}
+
+p
+{
+    padding-top: 35px;
+    text-align: center;
+    border: 3px solid red;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header
+{
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.name
+{
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 3px solid red;
+}
+
+.main-nav
+{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-nav li
+{
+    list-style: none;
+    margin: 7px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.name a,
+.main-nav a
+{
+    text-decoration: none;
+    letter-spacing: 1.1px;
+}
+
+.name a,
+.main-nav li a
+{
+    display: block;
+    padding: 8px 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.container
+{
+    width: 90%;
+}
+
+/* ---- Page Elements ---- */
+
+.cover-img
+{
+    width: 60%;
+    
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
