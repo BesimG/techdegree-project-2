@@ -387,11 +387,6 @@ h2
     float: left;
 }
 
-.name a
-{
-    display: inline-block;
-}
-
 .main-nav
 {
     font-size: 12px;
@@ -401,7 +396,6 @@ h2
 .main-nav li
 {
     background-color: rgb(247, 247, 247);
-    display: inline-block;
     padding-right: 25px;
 }
 
@@ -413,8 +407,8 @@ h2
 
 .container-portfolio
 {
-    float:left;
-    width: 50%;
+    float: left;
+    width: 30%;
     padding-right: 2px;
 }
 
