@@ -106,15 +106,23 @@ h2
 {
     padding-top: 20px;
     padding-bottom: 50px;
-    text-align: center;
     background-color: rgb(247, 247, 247);
 }
-
 
 .container
 {
     width: 90%;
     margin: auto;
+}
+
+.name-container
+{
+    text-align: center;
+}
+
+.main-nav-container
+{
+    text-align: center;
 }
 
 .main-footer
@@ -384,13 +392,11 @@ h2
 .name
 {
     font-size: 21px;
-    float: left;
 }
 
 .main-nav
 {
     font-size: 12px;
-    float: right;
 }
 
 .main-nav li
@@ -403,6 +409,7 @@ h2
 {
     padding-right: 0;
 }
+
 /* ---- Layout Containers ---- */
 
 .container-portfolio
@@ -410,6 +417,18 @@ h2
     float: left;
     width: 30%;
     padding-right: 2px;
+}
+
+.name-container
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.main-nav-container
+{
+    display: inline-block;
+    width: 50%;
 }
 
 /* ---- Page Elements ---- */
