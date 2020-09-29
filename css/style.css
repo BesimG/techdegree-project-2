@@ -357,17 +357,12 @@ h2
 
 /* ------------ Media Queries 1024px -------------- */
 
-@media (min-width: 1024)
+@media (min-width: 1024px)
 {
     
 /* ================================= 
   Base Element Styles
 ==================================== */
-
-img
-{
-    width: 95%;
-}
 
 p
 {
@@ -392,11 +387,13 @@ h2
 .name
 {
     font-size: 21px;
+    float: left;
 }
 
 .main-nav
 {
     font-size: 12px;
+    float: right;
 }
 
 .main-nav li
@@ -412,32 +409,29 @@ h2
 
 /* ---- Layout Containers ---- */
 
-.container-portfolio
-{
-    float: left;
-    width: 30%;
-    padding-right: 2px;
-}
-
 .name-container
 {
     display: inline-block;
-    width: 30%;
+    width: 27%;
 }
 
 .main-nav-container
 {
     display: inline-block;
-    width: 50%;
+    width: 70%;
+}
+
+.container-portfolio
+{
+    width: 33.33%;
 }
 
 /* ---- Page Elements ---- */
 
 .cover-img
 {
-    width: 25%;
+    width: 30%;
     float: right;
-    
 }
 
 .main-header p
@@ -445,6 +439,7 @@ h2
     padding-top: 55px;
     float: left;
     width: 60%;
+    text-align: left;
 }
 
 .student-name
