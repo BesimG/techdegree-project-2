@@ -14,6 +14,12 @@ body
     font-family: 'Lato', 'Arial', 'sans-serif';
 }
 
+/* ---- Code snippet provided by Brian Jensen --- */
+ul {
+    padding-left: 0;
+  }
+/* ---------------------------------------------- */
+
 a
 {
     color: #555;
@@ -33,14 +39,8 @@ p
     font-size: 21px;
     font-weight: 300;
     padding-top: 25px;
-    width: 95%;
     text-align: center;
 }
-
-/* h2:first-child
-{
-    padding-top: 50px;
-} */
 
 h3
 {
@@ -60,8 +60,6 @@ h2
     font-weight: 400;
 }
 
-
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -79,7 +77,6 @@ h2
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
-    border: 3px solid red;
 }
 
 .main-nav li
@@ -154,7 +151,6 @@ h2
 .main-footer p
 {
     color: rgb(62, 62, 62);
-    border: 3px solid red;
 }
 
 .phone
@@ -173,31 +169,279 @@ hr
     margin-top: 80px;
 }
 
-.bottom-of-page
-{
-    border: 3px solid red;
-}
-
 .student-name
 {
     float: left;
     font-weight: 900;
-    /* width: 45%; */
-    /* display: inline-block; */
     color: rgb(62, 62, 62);
 }
 
 .main-footer a
 {
     float: right;
-    /* width: 45%; */
     text-decoration: none;
-    /* display: inline-block; */
 }
+
+/* ---- Code snippet provided by Brian Jensen --- */
+.bottom-of-page {
+    padding: 25px 0;
+  }
+.bottom-of-page h3,
+.student-name {
+    padding: 0;
+}
+.student-name {
+    line-height: 0.50;
+}
+/* ---------------------------------------------- */
+
+.main-nav-bottom
+{
+    display: none;
+}
+
+
+
+
+/* ------------ Media Queries 768px -------------- */
 
 /* ================================= 
   Media Queries
 ==================================== */
+
+@media (min-width: 768px)
+{
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+img
+{
+    padding-top: 55px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
+{
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 25px;
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+h2
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+    
+/* ---- Navigation ---- */
+.name
+{
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.main-nav
+{
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.main-nav li
+{
+    list-style: none;
+    margin: 7px 0;
+    background-color: rgb(247, 247, 247);
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.main-nav li:last-child
+{
+    padding-right: 0;
+}
+
+.name a,
+.main-nav a
+{
+    text-decoration: none;
+    letter-spacing: 1.1px;
+}
+
+.name a,
+.main-nav li a
+{
+    display: block;
+    padding: 8px 0;
+}
+/* ---- Layout Containers ---- */
+
+.main-header
+{
+    padding-top: 20px;
+    padding-bottom: 35px;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+}
+
+
+.container
+{
+    width: 90%;
+    margin: auto;
+}
+
+.container-portfolio
+{
+    float:left;
+    width: 50%;
+    padding-right: 2px;
+}
+
+.main-footer
+{
+    background-color: rgb(247, 247, 247); 
+    text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.cover-img
+{
+    width: 25%;
+    float: right;
+    
+}
+
+.main-header p
+{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 55px;
+    float: left;
+    width: 60%;
+}
+
+.calculator-paragraph
+{
+    padding-bottom: 80px;
+}
+
+.contact-header
+{
+   padding-top: 80px;  
+}
+
+.main-footer p
+{
+    color: rgb(62, 62, 62);
+}
+
+.phone
+{
+    font-weight: 700;
+}
+
+.email
+{
+    font-weight: 700;
+}
+
+hr
+{
+    color: #555;
+    margin-top: 80px;
+}
+
+.student-name
+{
+    float: left;
+    font-weight: 900;
+    color: rgb(62, 62, 62);
+    font-size: 12px;
+}
+
+.main-footer a
+{
+    float: right;
+    text-decoration: none;
+}
+
+.top-button
+{
+    display: none;
+}
+
+.main-nav-bottom
+{
+    display: initial;
+    float: right;
+}
+
+.main-nav-bottom li
+{
+    list-style: none;
+    float: right;
+}
+
+.bottom-of-page,
+.main-nav-bottom li
+{
+    padding-top: 0;
+}
+
+.main-nav-bottom a
+{
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+/* ---- Code snippet provided by Brian Jensen --- */
+.bottom-of-page {
+    padding: 25px 0;
+  }
+.bottom-of-page h3,
+.student-name {
+    padding: 0;
+}
+.student-name {
+    line-height: 0.50;
+}
+/* ---------------------------------------------- */
+
+}
+
+/* ------------ Media Queries 768px -------------- */
+
+/* ------------ Media Queries 1024px -------------- */
+
+@media (min-width: 1024)
+{
+    
+}
 
 /* ---- Float clearfix ---- */
 
